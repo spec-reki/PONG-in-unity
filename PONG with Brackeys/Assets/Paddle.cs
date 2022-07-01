@@ -5,7 +5,6 @@ using UnityEngine;
 public class Paddle : MonoBehaviour
 {
     public bool isPlayer01;
-    public bool isPlayer02;
     public float speed;
     public Rigidbody2D rb;
 
@@ -13,17 +12,15 @@ public class Paddle : MonoBehaviour
 
     void Update() 
     {
-        if (isPlayer01)
+        if (Input.GetKey("w"))
         {
-            movement = Input.GetAxisRaw("Vertical");
-        }
-        
-        if (isPlayer02)
-        {
-            movement = Input.GetAxisRaw("Vertical2");
+            rb.AddForce(0, sidewayForce * 10, 0, ForceMode.VelocityChange);
         }
 
-        rb.velocity = new Vector2(rb.velocity.x, movement * speed);
-    }
+        if(Input.GetKey("s"))
+        {
+            rb.AddForce(-Force * 10, 0, 0, ForceMode.VelocityChange);
+        }
+
 
 }
