@@ -284,8 +284,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 1.790566
-  orthographic: 0
-  orthographic size: 6.6502213
+  orthographic: 1
+  orthographic size: 7.967514
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -437,7 +437,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.74, y: 0.74}
+    oldSize: {x: 1.25, y: 1.26}
     newSize: {x: 0.74, y: 0.74}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1329,7 +1329,7 @@ SpriteRenderer:
   m_Size: {x: 22.003307, y: 13.000001}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2107057865
