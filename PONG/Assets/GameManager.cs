@@ -29,13 +29,13 @@ public class GameManager : MonoBehaviour
  public void Player01Scored()
     {
         Player01Score++;
-        Player01Text.GetComponent<TextMeshProUI>().text = Player01Score.ToString();
+       
     }
 
     public void Player02Scored()
     {
         Player01Score++;
-        Player02Text.GetComponent<TextMeshProUI>().text = Player02Score.ToString();
+
     }
 
 
